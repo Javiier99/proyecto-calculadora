@@ -120,7 +120,11 @@ body{
     color: white;
 }
 
-
+@media(max-width: 560px){
+    .calculadora{
+        width: 90%;
+    }
+}
 
 
 

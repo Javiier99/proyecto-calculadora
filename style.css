@@ -1,0 +1,137 @@
+/* Clases conjuntas */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    /* Posteriormente hay que bajar el width al 20% ya que tiene más pinta de calculadora */
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 8px;
+    height: 50vh;
+}
+
+.todo-junto{
+    display: flex;
+    background-color: rgb(199, 199, 199);
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    
+}
+
+.todos-botones-no-numeros:hover{
+    transition: 0.5s;
+    border-radius: 30px;
+    
+}
+
+
+/* Solo los botónes de número */
+
+.botones-numeros{
+    background-color: rgb(227, 228, 230);
+}
+
+.botones-numeros:active{
+    background-color: rgb(43, 40, 40);
+    color: white;
+    transition-duration: 0.2s;
+}
+
+
+/* Solo los botones de calculo */
+.botones-calculo{
+    background-color: rgb(202, 202, 202);
+}
+
+.botones-calculo:active{
+    background-color: rgb(128, 116, 116);
+    color: white;
+    transition-duration: 0.2s;
+}
+
+
+
+
+/* Clases individuales */
+
+
+
+.apareceran-numeros{
+    grid-column: 1/5;
+    background-color:rgb(227, 228, 230);
+    /* Tengo que saber el tamaño adecuado, debo de buscar el truco para que 1 rem = 10 px*/
+    font-size: 3rem;
+    justify-content: end;
+}
+
+.cursor{
+    padding-right: 10px;
+    font-weight: bold;
+    animation: parpadeo 1s step-start infinite;
+}
+@keyframes parpadeo{
+    50%{
+        opacity: 0;
+    }
+}
+
+.boton-borrar-todo{
+    background-color: rgb(243, 118, 114);
+}
+
+.boton-borrar-todo:active{
+    background-color: rgb(146, 22, 22);
+    transition-duration: 0.2s;
+    color: white;
+}
+
+
+.boton-resultado{
+    background-color: rgb(177, 248, 85);
+}
+
+.boton-resultado:active{
+    background-color: rgb(109, 167, 33);
+    transition-duration: 0.2s;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

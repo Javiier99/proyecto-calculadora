@@ -124,6 +124,10 @@ body{
     .calculadora{
         width: 90%;
     }
+    body{
+        padding-top: 10%;
+        justify-content: start;
+    }
 }
 
 

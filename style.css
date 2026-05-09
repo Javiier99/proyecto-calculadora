@@ -127,6 +127,7 @@ body{
     body{
         padding-top: 10%;
         justify-content: start;
+        height: none;
     }
 }
 

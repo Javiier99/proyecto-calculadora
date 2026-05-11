@@ -153,3 +153,22 @@ function volverACalcular(){
     numero2 = "";
 }
 
+
+
+
+
+// Botón Vacio
+const botonVacio = document.querySelector(".boton-vacio");
+
+botonVacio.addEventListener("click", ()=>{
+    window.location.href = "https://marketingjdr.com/";
+})
+
+
+
+
+
+
+
+
+

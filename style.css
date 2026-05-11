@@ -42,7 +42,7 @@ body{
     
 }
 
-.todo-junto:hover{
+.todo-junto-sin-aparecer-numeros:hover{
     cursor: pointer;
 }
 
